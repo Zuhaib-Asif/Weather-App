@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(https://t3.ftcdn.net/jpg/02/94/97/28/360_F_294972831_167e8wPwB7NfeYAefruKeuiMPGkx6Dfy.jpg) no-repeat center center/cover;
+
+}
+
+.container {
+    padding: 20px 30px;
+    background: rgba(43, 128, 232, 0.92);
+    border-radius: 8px;
+    width: 65%;
+}
+
+.heading {
+    text-align: center;
+    color: #ffd900;
+    margin-bottom: 12px;
+}
+
+#cityError {
+    text-align: center;
+    display: none;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+}
+
+.container input {
+    padding: 7px;
+    border-radius: 3px;
+    color: #012f46;
+    border: 1px solid grey;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    outline: none;
+}
+
+#weatherImg {
+    width: 48px;
+}
+
+#searchBtn {
+    padding: 7px;
+    color: #012f46;
+    background-color: #ffd900;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#searchBtn:hover {
+    color: #ffd900;
+    background-color: #012f46;
+}
+
+#celTemp {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 30px;
+    color: #ffd900;
+    display: flex;
+    font-weight: bolder;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#secondrow {
+    display: none;
+}
+
+#weatherCity {
+    margin-top: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+#celTemps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#farTemp,
+#humidity {
+    background-color: #eddee2;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #012f46;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    width: 49%;
+}
+
+#farTempResult {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 0;
+}
+
+#humidityResult {
+    padding: 6px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#lastUpdate {
+    margin-top: 8px;
+    color: #dbe6f8;
+    font-weight: bolder;
+}
+
+@media(max-width:544px) {
+    .container {
+        width: 80%;
+    }
+
+    .container input {
+        font-size: 15px;
+        width: 75%;
+    }
+
+    #searchBtn {
+        padding: 3px;
+    }
+
+    .heading,
+    #weatherCity {
+        font-size: 23px;
+    }
+
+    #celTemp {
+        font-size: 20px;
+    }
+
+    #weatherImg {
+        width: 36px;
+    }
+
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #farTemp {
+        margin-bottom: 12px;
+    }
+
+    #farTemp,
+    #humidity {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    #lastUpdate {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Check Weather</h1>
+        <div class="first-row">
+            <input type="text" name="" id="userInput" placeholder="Enter City">
+            <button id="searchBtn">Search</button>
+        </div>
+        <h1 id="cityError">City Not Found</h1>
+        <div id="secondrow">
+            <h1 id="weatherCity"></h1>
+            <div id="celTemps">
+                <span id="celTemp"></span>
+                <img src="" alt="" id="weatherImg">
+            </div>
+            <div class="row">
+                <div id="farTemp">Temperature in Fahrenheit
+                    <div id="farTempResult"></div>
+                </div>
+                <div id="humidity">Humidity
+                    <div id="humidityResult"></div>
+                </div>
+            </div>
+            <div id="lastUpdate">Last Updated</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
