@@ -1,4 +1,5 @@
-# Preview Live Site: https://zuhaib-asif.github.io/Weather-App/
+# Preview Live Site: 
+https://zuhaib-asif.github.io/Weather-App/
 # Weather-App
 
 This project is a JavaScript application that displays weather information for a specific location. The user can search for a city, and the application will retrieve the current weather conditions, including temperature, humidity, and other relevant details. The app also displays an icon that reflects the current weather conditions.
